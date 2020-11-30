@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #ecf0f3;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 8px #afadad;
+}
+body{
+    background-color: #ecf0f3;
+}
+h1{
+    font-size: 2.5rem;
+}
+#selectedhexagon, #selectedhexagon div{
+    width: 18px;
+    height: 21px;
+    color: black;
+    background-image: linear-gradient(-30deg,white,white,black);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    top: -65px;
+    left: 45px;
+    cursor: pointer;
+}
+#selectedhexagon div{
+    top: 2.5px;
+    left: 2px;
+    width: 14px;
+    height: 16px;
+    background-image: linear-gradient(14deg,#CC0000,#CC0000);
+}
+img{
+    display: block;
+}
+.colorConsole{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.middlePart{
+    width: 100%;
+    height: 585px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.linearGradient,.chosenColor,.colorBox{
+    width: 28%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ecf0f3;
+    border-radius: 9px;
+    box-shadow: -9px -9px 10px white, 7px 7px 10px #afadad;
+}
+.colorBox{
+    position: relative;
+}
+.linearGradientBox,.chosenColorBox{
+    width: 90%;
+    height: 86%;
+    background-color: #ecf0f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.linearGradientText,.chosenColorText{
+    width: 90%;
+    height: 12%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colorOutput{
+    width: 90%;
+    height: 40%;
+    background-color: #ecf0f3;
+    color: white;
+}
+.linearGradientColor{
+    width: 90%;
+    height: 50%;
+    background-image: linear-gradient(120deg,#cc0000,yellow);
+    box-shadow: 7px 7px 8px #afadad, -10px -10px 9px white;
+    border-radius: 9px;
+}
+.degree,.color1,.color2,.customColor{
+    width: 90%;
+    height: 14%;
+    display: flex;
+    flex-direction: column;
+}
+.chosenColorBox>div:nth-child(1){
+    width: 90%;
+    height: 74%;
+    margin-top: 16px;
+    background-color: #cc0000;
+    box-shadow: 7px 7px 8px #afadad, -10px -10px 10px white;
+    margin-bottom: 21px;
+    border-radius: 10px;
+}
+.chosenColorBox{
+    justify-content:flex-start;
+}
+label{
+    font-weight: bold;
+}
+#customColorInput,#degreeBox,#color1Box,#color2Box{
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    box-shadow: inset -3px -3px 4px white, inset 2px 2px 5px #afadad;
+}
+.colorOutput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 4px 4px 5px #afadad, -4px -4px 8px #ffffff;
+}
+
+.colorOutHead{
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+.colorOutBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.hexCol,.rgbCol{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+}
+.hexCol{
+    box-shadow: inset 2px 2px 2px #afadad,inset -2px -2px 2px #ffffff;
+}
+.colorOutChosen,.colorOutChosenRGB{
+    width: 70%;
+    height: 25%;
+    background-color: #ecf0f3;
+    box-shadow: inset 2px 2px 2px #afadad,inset -2px -2px 2px #ffffff;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.colorOutChosen{
+    display: flex;
+}
+.copy{
+    border: none;
+    outline: none;
+    width: 70%;
+    height: 30%;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 4px 4px 6px #afadad, -7px -7px 8px #ffffff;
+    font-weight: bold;
+}
